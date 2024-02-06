@@ -54,6 +54,7 @@ public class TestCases {
     public  void testCase01(){
         System.out.println("Start Test case: testCase01");
         driver.get("https://www.google.com");
+        driver.getCurrentUrl().contains("google");
         driver.findElement(By.id("APjFqb")).clear();
         driver.findElement(By.id("APjFqb")).sendKeys("calculator");
         driver.findElement(By.className("gNO89b")).click();
